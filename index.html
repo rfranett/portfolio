@@ -3,112 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robson Almeida - Desenvolvedor Front-end</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
 </head>
-
-
 <body>
     <div class="cxPrincipal">
-        <nav>
-            <h2 class="portifolio">Portifo<span>lio</span></h2>
-            <ul>
-                <li><a class="lmenu" href="#proj">Projetos</a></li>
-                <li><a class="lmenu" href="https://www.youtube.com/channel/UC8agYJ8tTLndEVHlQeKUWcw"target="_blank">youTube</a></li>
-                <li><a class="lmenu" href="https://github.com/rfranett"target="_blank">github</a></li>
-                <li><a class="lmenu" href="#faleComigo">Fale Comigo</a></li>
-            </ul>
+        <nav class="nav-superior">
+            <a href="#" class="logo">Robson<span>Dev</span></a>
+            <div class="nav-links">
+                <a href="https://github.com/rfranett" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/robson-al-alves-054a8a19b/" target="_blank">LinkedIn</a>
+                <a href="https://www.youtube.com/@robsonfranett5641" target="_blank">YouTube</a>
+            </div>
         </nav>
 
-        <div class="meuNome">
-            <h1>Robson <span>Al. Almeida</span></h1>
-            <h3>Programador Front End</h3>
-        </div>
+        <!-- Seção de apresentação -->
+        <section class="presentation">
+            <div class="content">
+                <h1>Olá, eu sou</h1>
+                <h2>Robson Almeida</h2>
+                <h3>Desenvolvedor Front-end</h3>
+                <a href="https://wa.me/11932064201" target="_blank" class="contact-button">
+                    Entre em Contato
+                </a>
+            </div>
+            
+            <!-- Bolha flutuante com astronauta dentro -->
+            <div class="floating-bubble">
+                <img src="./favicon_io/android-chrome-512x512.png" alt="Astronauta" class="bubble-astronaut">
+            </div>
 
+            <!-- Background com astronauta (mantido como está) -->
+            <div class="background-container">
+                <img src="./assets/astronauta.png" alt="Astronauta Background" class="background-astronaut">
+            </div>
+        </section>
     </div>
 
-    <section id="faleComigo">
-        <img src="./favicon_io/android-chrome-512x512.png">
-        <div>
-            <h2>Sobre Mim</h2>
-            <p>Eu sou um Programador Front End, onde Tenho conhecimento e experiencias em HTML CSS JS</p>
-            <a href="https://api.whatsapp.com/send?phone=5511932064201&text=Ola.%20Robson%20tudo%20bem%20com%20voc%C3%AA%20Venho%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20me%20comunicar%20com%20voc%C3%AA%20.."target="_blank">Entre em Contato</a>
+    <section class="sobre-section">
+        <h2 class="section-title">Sobre Mim</h2>
+        
+        <div class="sobre-container">
+            <!-- Tecnologias -->
+            <div class="tech-badges">
+                <div class="tech-badge">HTML5</div>
+                <div class="tech-badge">CSS3</div>
+                <div class="tech-badge">JavaScript</div>
+                <div class="tech-badge">Responsive Design</div>
+            </div>
+            
+            <!-- Descrição e Astronauta -->
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>Desenvolvedor Front-end apaixonado por criar experiências web incríveis. Especializado em HTML, CSS e JavaScript, busco constantemente aprender e evoluir na área de desenvolvimento web.</p>
+                </div>
+                
+                
+                </div>
+            </div>
         </div>
-
     </section>
 
-     <div class="projetos" id="proj"> 
-        <h2>Projetos</h2>
+    <section class="projetos" id="proj">
+        <h2>Meus Projetos</h2>
+        
+        <div class="projetos-grid">
+            <!-- Projeto 1 - Mundo Invertido -->
+            <div class="projeto-card">
+                <div class="projeto-imagem">
+                    <img src="favicon_io/inverted-world.png" alt="Mundo Invertido">
+                </div>
+                <div class="projeto-info">
+                    <h3>Mundo Invertido</h3>
+                    <p>Projeto inspirado na série Stranger Things, desenvolvido com HTML, CSS e JavaScript.</p>
+                    <a href="https://rfranett.github.io/semana-frontend-mundo-invertido-main/" target="_blank" class="btn-projeto">Ver Projeto</a>
+                </div>
+            </div>
 
-        <div class="carProjet">
+            <!-- Projeto 2 - Previsão do Tempo -->
+            <div class="projeto-card">
+                <div class="projeto-imagem">
+                    <img src="favicon_io/tempo.png" alt="Previsão do Tempo">
+                </div>
+                <div class="projeto-info">
+                    <h3>Previsão do Tempo</h3>
+                    <p>Aplicativo de previsão do tempo em tempo real, desenvolvido com HTML, CSS e JavaScript.</p>
+                    <a href="https://rfranett.github.io/leituraDoTempo/" target="_blank" class="btn-projeto">Ver Projeto</a>
+                </div>
+            </div>
 
-        <div class="card">
-            <img src="favicon_io/inverted-world.png">
-            <h5>"mundo invertido"</h5>
-            <P>Projeto construído para fins didáticos, com o objetivo de colocar em prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO._</P>
-            <a href="https://rfranett.github.io/semana-frontend-mundo-invertido-main/" target="_blank">ver Projeto</a>
+            <!-- Projeto 3 - Lista de Afazeres -->
+            <div class="projeto-card">
+                <div class="projeto-imagem">
+                    <img src="favicon_io/lista.png" alt="Lista de Afazeres">
+                </div>
+                <div class="projeto-info">
+                    <h3>Lista de Afazeres</h3>
+                    <p>Aplicação de lista de tarefas desenvolvida com HTML, CSS e JavaScript.</p>
+                    <a href="https://rfranett.github.io/listaTudo/" target="_blank" class="btn-projeto">Ver Projeto</a>
+                </div>
+            </div>
 
+            <!-- Projeto 4 - Jogo Pong -->
+            <div class="projeto-card">
+                <div class="projeto-imagem">
+                    <img src="favicon_io/pong.jpg" alt="Jogo Pong">
+                </div>
+                <div class="projeto-info">
+                    <h3>Jogo Pong</h3>
+                    <p>Recriação do clássico jogo Pong da Atari usando HTML e JavaScript.</p>
+                    <a href="https://rfranett.github.io/jogo-pong/" target="_blank" class="btn-projeto">Ver Projeto</a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <img src="favicon_io/tempo.png">
-            <h5>"Aplicativo" <br> Previsão <br>do<br> Tempo </h5>
-            <P>Em Tempo Real - Desenvolvido com HTML, CSS e JavaScript" que abre no navegador</P>
-            <a href="https://rfranett.github.io/leituraDoTempo/" target="_blank">ver Projeto</a>
+    <section class="certificacoes">
+        <h2 class="section-title">Certificações e Cursos</h2>
+        
+        <div class="cert-container">
+            <!-- DIO -->
+            <div class="cert-card">
+                <div class="cert-header">
+                    <img src="path-to-dio-logo.png" alt="DIO">
+                    <h3>DIO - Digital Innovation One</h3>
+                </div>
+                <div class="cert-content">
+                    <h4>Desenvolvimento Web Front-end</h4>
+                    <div class="tech-pills">
+                        <span class="pill">HTML5 e CSS3</span>
+                        <span class="pill">JavaScript ES6</span>
+                        <span class="pill">Desenvolvimento Web Responsivo</span>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Udemy -->
+            <div class="cert-card">
+                <div class="cert-header">
+                    <img src="path-to-udemy-logo.png" alt="Udemy">
+                    <h3>Udemy</h3>
+                </div>
+                <div class="cert-content">
+                    <h4>Desenvolvimento Web Completo</h4>
+                    <div class="tech-pills">
+                        <span class="pill">HTML5</span>
+                        <span class="pill">CSS3</span>
+                        <span class="pill">JavaScript</span>
+                        <span class="pill">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curso em Vídeo -->
+            <div class="cert-card">
+                <div class="cert-header">
+                    <img src="path-to-cursoemvideo-logo.png" alt="Curso em Vídeo">
+                    <h3>Curso em Vídeo</h3>
+                </div>
+                <div class="cert-content">
+                    <h4>Programação Web</h4>
+                    <div class="tech-pills">
+                        <span class="pill">JavaScript</span>
+                        <span class="pill">HTML5</span>
+                        <span class="pill">Git e GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fundação Bradesco -->
+            <div class="cert-card">
+                <div class="cert-header">
+                    <img src="path-to-bradesco-logo.png" alt="Fundação Bradesco">
+                    <h3>Fundação Bradesco</h3>
+                </div>
+                <div class="cert-content">
+                    <h4>Desenvolvimento Web</h4>
+                    <div class="tech-pills">
+                        <span class="pill">HTML Básico</span>
+                        <span class="pill">HTML Avançado</span>
+                        <span class="pill">Inovação</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <img src="favicon_io/lista.png">
-            <h5>"Lista de Afazeres"</h5>
-            <P>Nesta aplicação eu desenvolvo uma lista em HTML, CSS e JavaScriot"  que abre em seu navegador. </P>
-            <a href="https://rfranett.github.io/listaTudo/" target="_blank">ver Projeto</a>
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Vamos Trabalhar Juntos?</h2>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/robson-franett-054a8a19b/" target="_blank">
+                        <img src="./favicon_io/linkedin-logo-hd-png-3.png" alt="LinkedIn">
+                    </a>
+                    <a href="mailto:robsomfranett@gmail.com">
+                        <img src="./favicon_io/gmail.png" alt="Email">
+                    </a>
 
-        </div>
-
-        <div class="card">
-            <img src="favicon_io/pong.jpg">
-            <h5>"Jogo"</h5>
-            <P>neste Projeto foi feito um jogo funcional em html<br>um dos clássicos da Atari aqui para se recordar </P>
-            <a href="https://rfranett.github.io/jogo-pong/" target="_blank">ver Projeto</a>
-
-        </div>
-
-        <div class="card">
-            <img src="favicon_io/images.jpg">
-            <h5>"?"</h5>
-            <P>"HTML, CSS e JavaScript"<br>Vai sair alguma parada aqui ...</P>
-            <a href="" target="_blank">ver Projeto</a>
-
-        </div>
-
-    </div>
-
-     </div>
-          
-    <footer>
-        <h5>Robson Al.Almeida</h5>
-        <p>Para mais informações</p>
-
-        <div class="social">
-
-            <a href="https://www.linkedin.com/in/robson-franett-054a8a19b/"target="_blank">
-                <img src="./favicon_io/linkedin-logo-hd-png-3.png">
-            </a>
-
-            <a href="mailto:robsomfranett@gmail.com" target="_blank">
-                <img src="./favicon_io/gmail.png">
-            </a>
-            
-
+                </div>
+            </div>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 </body>
-
 </html>
